@@ -26,6 +26,16 @@ scrape_configs:
           environment: local
           scenario_group: c2-c3
 
+  # Optional load-generator host metrics. Install Node Exporter on the k6
+  # notebook and replace this placeholder with the notebook LAN IP before use.
+  - job_name: k6-client-node-exporter
+    static_configs:
+      - targets:
+          - 192.168.2.121:9100
+        labels:
+          environment: local
+          role: k6-client
+
   # Use this target when Node Exporter is installed directly on the local host
   # for C1. With Docker Compose on Linux, host.docker.internal is provided by
   # the extra_hosts setting in docker/docker-compose.yml.

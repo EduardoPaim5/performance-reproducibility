@@ -44,6 +44,12 @@ http {
   access_log $RUN_DIR/logs/access.log;
   error_log $RUN_DIR/logs/error.log warn;
 
+  client_body_temp_path $RUN_DIR/client_body_temp;
+  proxy_temp_path $RUN_DIR/proxy_temp;
+  fastcgi_temp_path $RUN_DIR/fastcgi_temp;
+  uwsgi_temp_path $RUN_DIR/uwsgi_temp;
+  scgi_temp_path $RUN_DIR/scgi_temp;
+
   sendfile on;
   tcp_nopush on;
   keepalive_timeout 65;

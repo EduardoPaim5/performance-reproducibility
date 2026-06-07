@@ -1,0 +1,41 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+__pycache__/
+*.pyc
+
+# Experiment outputs
+results/*
+!results/.gitkeep
+!results/raw/
+!results/raw/.gitkeep
+!results/processed/
+!results/processed/.gitkeep
+!results/plots/
+!results/plots/.gitkeep
+!results/logs/
+!results/logs/.gitkeep
+results/raw/**
+!results/raw/.gitkeep
+results/processed/**
+!results/processed/.gitkeep
+results/plots/**
+!results/plots/.gitkeep
+results/logs/**
+!results/logs/.gitkeep
+
+# k6 generated exports
+*.jsonl
+*.csv
+
+# Docker/runtime local state
+.env
+docker/.env

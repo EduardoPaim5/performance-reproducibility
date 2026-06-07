@@ -1,0 +1,50 @@
+{
+  "description": "Progressive load levels for the web server performance reproducibility experiment.",
+  "rampUpDuration": "1m",
+  "warmupDuration": "1m",
+  "measurementDuration": "5m",
+  "recommendedReplications": 30,
+  "levels": [
+    {
+      "level": 1,
+      "vus": 50,
+      "duration": "5m"
+    },
+    {
+      "level": 2,
+      "vus": 75,
+      "duration": "5m"
+    },
+    {
+      "level": 3,
+      "vus": 112,
+      "duration": "5m"
+    },
+    {
+      "level": 4,
+      "vus": 168,
+      "duration": "5m"
+    },
+    {
+      "level": 5,
+      "vus": 252,
+      "duration": "5m"
+    },
+    {
+      "level": 6,
+      "vus": 378,
+      "duration": "5m"
+    }
+  ],
+  "continuationRule": {
+    "enabled": true,
+    "increaseFactor": 1.5,
+    "rounding": "nearest_integer",
+    "stopWhen": [
+      "p95 latency increases sharply compared with the previous stable level",
+      "throughput stops increasing or starts decreasing",
+      "HTTP error rate increases materially",
+      "CPU, memory, network, or disk resources show saturation"
+    ]
+  }
+}

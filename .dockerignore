@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+results/
+paper/figures/
+monitoring/grafana/dashboards/
+
+*.log
+*.jsonl
+*.csv
+__pycache__/
+*.pyc
+
+.env
+docker/.env
+

@@ -1,0 +1,64 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets:
+          - prometheus:9090
+        labels:
+          environment: local
+
+  - job_name: local-docker-node-exporter
+    static_configs:
+      - targets:
+          - node-exporter:9100
+        labels:
+          environment: local
+          scenario_group: c2-c3
+
+  - job_name: local-docker-cadvisor
+    static_configs:
+      - targets:
+          - cadvisor:8080
+        labels:
+          environment: local
+          scenario_group: c2-c3
+
+  # Use this target when Node Exporter is installed directly on the local host
+  # for C1. With Docker Compose on Linux, host.docker.internal is provided by
+  # the extra_hosts setting in docker/docker-compose.yml.
+  - job_name: local-native-node-exporter
+    static_configs:
+      - targets:
+          - host.docker.internal:9100
+        labels:
+          environment: local
+          scenario_group: c1
+
+  # AWS placeholders for C4. Replace the example hostnames or IPs before using.
+  # Do not expose Node Exporter or cAdvisor publicly. Prefer Prometheus running
+  # inside the AWS host, a VPN, private networking, or SSH tunneling.
+  # SSH tunnel example from the local host:
+  # ssh -i SSH_KEY -N -L 19100:127.0.0.1:9100 -L 18080:127.0.0.1:8080 AWS_USER@AWS_HOST
+  # When Prometheus runs in this Docker Compose stack, use host.docker.internal
+  # to reach ports forwarded on the local host.
+  # Keep the labels stable so Grafana queries can compare local and AWS runs.
+  - job_name: aws-swarm-node-exporter
+    static_configs:
+      - targets:
+          - host.docker.internal:19100
+        labels:
+          environment: aws
+          scenario_group: c4
+          access_method: ssh_tunnel
+
+  - job_name: aws-swarm-cadvisor
+    static_configs:
+      - targets:
+          - host.docker.internal:18080
+        labels:
+          environment: aws
+          scenario_group: c4
+          access_method: ssh_tunnel

@@ -1,0 +1,26 @@
+services:
+  nginx:
+    image: nginx:1.28-alpine
+    ports:
+      - target: 80
+        published: ${NGINX_PUBLISHED_PORT:-8080}
+        protocol: tcp
+        mode: ingress
+    configs:
+      - source: nginx_conf
+        target: /etc/nginx/nginx.conf
+      - source: nginx_index
+        target: /usr/share/nginx/html/index.html
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.role == manager
+
+configs:
+  nginx_conf:
+    file: ../../nginx/nginx.conf
+  nginx_index:
+    file: ../../nginx/html/index.html

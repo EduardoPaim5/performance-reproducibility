@@ -108,12 +108,22 @@ for level_spec in "${LEVELS[@]}"; do
 
     echo "Running phase $EXPERIMENT_PHASE, level $LEVEL, replication $replication/$REPLICATIONS: VUS=$VUS, RAMP_UP=$RAMP_UP, WARMUP=$WARMUP, DURATION=$DURATION, TARGET_URL=$TARGET_URL"
 
+    set +e
     if [[ "$EXPORT_RAW" == "true" ]]; then
       TARGET_URL="$TARGET_URL" VUS="$VUS" RAMP_UP="$RAMP_UP" WARMUP="$WARMUP" DURATION="$DURATION" SCENARIO="$SCENARIO" \
         k6 run --summary-export "$SUMMARY_FILE" --out "json=$RAW_FILE" "$K6_SCRIPT" 2>&1 | tee "$LOG_FILE"
     else
       TARGET_URL="$TARGET_URL" VUS="$VUS" RAMP_UP="$RAMP_UP" WARMUP="$WARMUP" DURATION="$DURATION" SCENARIO="$SCENARIO" \
         k6 run --summary-export "$SUMMARY_FILE" "$K6_SCRIPT" 2>&1 | tee "$LOG_FILE"
+    fi
+    K6_EXIT_CODE="${PIPESTATUS[0]}"
+    set -e
+
+    if [[ "$K6_EXIT_CODE" -eq 99 ]]; then
+      echo "Warning: k6 thresholds were crossed for level $LEVEL, replication $replication. Continuing because threshold crossings are experimental data."
+    elif [[ "$K6_EXIT_CODE" -ne 0 ]]; then
+      echo "Error: k6 failed with exit code $K6_EXIT_CODE for level $LEVEL, replication $replication."
+      exit "$K6_EXIT_CODE"
     fi
 
     echo "Summary saved to $SUMMARY_FILE"

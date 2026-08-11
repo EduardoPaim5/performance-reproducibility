@@ -13,6 +13,7 @@ set -euo pipefail
 #   DURATION=15s
 #   COOLDOWN=0
 #   EXPORT_RAW=true
+#   INHIBIT_SLEEP=false
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 K6_SCRIPT="$ROOT_DIR/k6/scripts/load-test.js"
@@ -29,6 +30,23 @@ WARMUP="${WARMUP:-}"
 DURATION_OVERRIDE="${DURATION:-}"
 COOLDOWN="${COOLDOWN:-}"
 EXPORT_RAW="${EXPORT_RAW:-true}"
+INHIBIT_SLEEP="${INHIBIT_SLEEP:-false}"
+
+if [[ "$INHIBIT_SLEEP" == "true" && "${K6_SLEEP_INHIBITED:-false}" != "true" ]]; then
+  if command -v systemd-inhibit >/dev/null 2>&1; then
+    echo "Re-running under systemd-inhibit to prevent sleep/idle while k6 is running."
+    export K6_SLEEP_INHIBITED=true
+    exec systemd-inhibit \
+      --what=sleep:idle \
+      --why="running k6 performance tests" \
+      --mode=block \
+      "$0" "$@"
+  else
+    echo "Warning: INHIBIT_SLEEP=true was requested, but systemd-inhibit was not found."
+    echo "Continuing without sleep inhibition."
+  fi
+fi
+
 RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)"
 RUN_NAME="${SCENARIO}_${EXPERIMENT_PHASE}_${RUN_ID}"
 RUN_DIR="$RAW_RESULTS_DIR/$RUN_NAME"
@@ -90,6 +108,7 @@ RAMP_UP=$RAMP_UP
 WARMUP=$WARMUP
 DURATION_OVERRIDE=$DURATION_OVERRIDE
 EXPORT_RAW=$EXPORT_RAW
+INHIBIT_SLEEP=$INHIBIT_SLEEP
 EOF
 
 cp "$RUN_DIR/metadata.env" "$RUN_LOG_DIR/metadata.env"

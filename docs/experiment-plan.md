@@ -89,6 +89,8 @@ This phase reduces computational cost and runtime because it avoids 30 replicati
 
 The defaults in `scripts/run-k6-levels.sh` are shorter than the recommended configuration above so they can be used only for low-cost local smoke tests.
 
+When the load generator is a notebook, run the script with `INHIBIT_SLEEP=true`. This makes the script use `systemd-inhibit` to block sleep and idle suspension during the k6 execution, without changing the machine's permanent power settings.
+
 ### Confirmatory phase
 
 Objective: collect statistically relevant data at the levels selected after exploration.

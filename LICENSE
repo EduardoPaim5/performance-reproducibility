@@ -1,3 +1,9 @@
+Unless otherwise stated, this MIT License applies to the repository's source
+code, scripts, configuration files, and documentation. Experimental datasets,
+raw and processed results, execution logs, and generated figures are licensed
+under the Creative Commons Attribution 4.0 International License; see
+DATA-LICENSE.md.
+
 MIT License
 
 Copyright (c) 2026
@@ -19,4 +25,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

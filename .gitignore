@@ -39,3 +39,7 @@ results/logs/**
 # Docker/runtime local state
 .env
 docker/.env
+
+# Local Zenodo packaging artifacts (published separately from GitHub)
+performance-reproducibility-zenodo-*.zip
+zenodo-package/

@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827}.title{font-size:40px;font-weight:700}.subtitle{font-size:22px;fill:#4b5563}.panel{font-size:25px;font-weight:700}.axis{font-size:19px;fill:#374151}.tick{font-size:17px;fill:#6b7280}.legend{font-size:20px}</style>
+<text x="70" y="62" class="title">Resultados confirmatórios k6: C1-C4</text>
+<text x="70" y="98" class="subtitle">Média de 30 repetições por nível de carga</text>
+<line x1="1130" y1="54" x2="1164" y2="54" stroke="#2563eb" stroke-width="5"/>
+<text x="1175" y="60" class="legend">C1 Nativo</text>
+<line x1="1130" y1="84" x2="1164" y2="84" stroke="#16a34a" stroke-width="5"/>
+<text x="1175" y="90" class="legend">C2 Docker</text>
+<line x1="1130" y1="114" x2="1164" y2="114" stroke="#dc2626" stroke-width="5"/>
+<text x="1175" y="120" class="legend">C3 Swarm local</text>
+<line x1="1130" y1="144" x2="1164" y2="144" stroke="#9333ea" stroke-width="5"/>
+<text x="1175" y="150" class="legend">C4 AWS Swarm</text>
+<text x="73" y="179" class="panel">Latência p95 média</text>
+<line x1="143" y1="625.0" x2="850" y2="625.0" stroke="#e5e7eb"/>
+<text x="131" y="631.0" text-anchor="end" class="tick">0.00</text>
+<line x1="143" y1="541.4" x2="850" y2="541.4" stroke="#e5e7eb"/>
+<text x="131" y="547.4" text-anchor="end" class="tick">10000</text>
+<line x1="143" y1="457.8" x2="850" y2="457.8" stroke="#e5e7eb"/>
+<text x="131" y="463.8" text-anchor="end" class="tick">20000</text>
+<line x1="143" y1="374.2" x2="850" y2="374.2" stroke="#e5e7eb"/>
+<text x="131" y="380.2" text-anchor="end" class="tick">30000</text>
+<line x1="143" y1="290.6" x2="850" y2="290.6" stroke="#e5e7eb"/>
+<text x="131" y="296.6" text-anchor="end" class="tick">40000</text>
+<line x1="143" y1="207.0" x2="850" y2="207.0" stroke="#e5e7eb"/>
+<text x="131" y="213.0" text-anchor="end" class="tick">50000</text>
+<line x1="143.0" y1="207" x2="143.0" y2="625" stroke="#f3f4f6"/>
+<text x="143.0" y="659" text-anchor="middle" class="tick">168</text>
+<line x1="425.8" y1="207" x2="425.8" y2="625" stroke="#f3f4f6"/>
+<text x="425.8" y="659" text-anchor="middle" class="tick">252</text>
+<line x1="850.0" y1="207" x2="850.0" y2="625" stroke="#f3f4f6"/>
+<text x="850.0" y="659" text-anchor="middle" class="tick">378</text>
+<line x1="143" y1="625" x2="850" y2="625" stroke="#1f2937" stroke-width="2"/>
+<line x1="143" y1="207" x2="143" y2="625" stroke="#1f2937" stroke-width="2"/>
+<text x="496.5" y="667" text-anchor="middle" class="axis">VUs</text>
+<text x="79" y="416.0" text-anchor="middle" transform="rotate(-90 79 416.0)" class="axis">ms</text>
+<path d="M 143.0 591.8 L 425.8 617.4 L 850.0 577.9" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="591.8" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="617.4" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="577.9" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 509.4 L 425.8 471.7 L 850.0 463.9" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="509.4" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="471.7" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="463.9" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 549.6 L 425.8 557.8 L 850.0 563.7" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="549.6" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="557.8" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="563.7" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 546.4 L 425.8 571.9 L 850.0 518.5" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="546.4" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="571.9" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="518.5" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<text x="958" y="179" class="panel">Latência p99 média</text>
+<line x1="1028" y1="625.0" x2="1705" y2="625.0" stroke="#e5e7eb"/>
+<text x="1016" y="631.0" text-anchor="end" class="tick">0.00</text>
+<line x1="1028" y1="541.4" x2="1705" y2="541.4" stroke="#e5e7eb"/>
+<text x="1016" y="547.4" text-anchor="end" class="tick">20000</text>
+<line x1="1028" y1="457.8" x2="1705" y2="457.8" stroke="#e5e7eb"/>
+<text x="1016" y="463.8" text-anchor="end" class="tick">40000</text>
+<line x1="1028" y1="374.2" x2="1705" y2="374.2" stroke="#e5e7eb"/>
+<text x="1016" y="380.2" text-anchor="end" class="tick">60000</text>
+<line x1="1028" y1="290.6" x2="1705" y2="290.6" stroke="#e5e7eb"/>
+<text x="1016" y="296.6" text-anchor="end" class="tick">80000</text>
+<line x1="1028" y1="207.0" x2="1705" y2="207.0" stroke="#e5e7eb"/>
+<text x="1016" y="213.0" text-anchor="end" class="tick">100000</text>
+<line x1="1028.0" y1="207" x2="1028.0" y2="625" stroke="#f3f4f6"/>
+<text x="1028.0" y="659" text-anchor="middle" class="tick">168</text>
+<line x1="1298.8" y1="207" x2="1298.8" y2="625" stroke="#f3f4f6"/>
+<text x="1298.8" y="659" text-anchor="middle" class="tick">252</text>
+<line x1="1705.0" y1="207" x2="1705.0" y2="625" stroke="#f3f4f6"/>
+<text x="1705.0" y="659" text-anchor="middle" class="tick">378</text>
+<line x1="1028" y1="625" x2="1705" y2="625" stroke="#1f2937" stroke-width="2"/>
+<line x1="1028" y1="207" x2="1028" y2="625" stroke="#1f2937" stroke-width="2"/>
+<text x="1366.5" y="667" text-anchor="middle" class="axis">VUs</text>
+<text x="964" y="416.0" text-anchor="middle" transform="rotate(-90 964 416.0)" class="axis">ms</text>
+<path d="M 1028.0 554.5 L 1298.8 608.9 L 1705.0 554.6" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="554.5" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="608.9" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="554.6" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 497.3 L 1298.8 469.7 L 1705.0 434.8" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="497.3" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="469.7" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="434.8" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 551.9 L 1298.8 559.1 L 1705.0 561.1" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="551.9" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="559.1" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="561.1" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 536.3 L 1298.8 563.7 L 1705.0 497.2" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="536.3" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="563.7" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="497.2" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<text x="73" y="779" class="panel">Throughput médio</text>
+<line x1="143" y1="1225.0" x2="850" y2="1225.0" stroke="#e5e7eb"/>
+<text x="131" y="1231.0" text-anchor="end" class="tick">0.00</text>
+<line x1="143" y1="1141.4" x2="850" y2="1141.4" stroke="#e5e7eb"/>
+<text x="131" y="1147.4" text-anchor="end" class="tick">100.0</text>
+<line x1="143" y1="1057.8" x2="850" y2="1057.8" stroke="#e5e7eb"/>
+<text x="131" y="1063.8" text-anchor="end" class="tick">200.0</text>
+<line x1="143" y1="974.2" x2="850" y2="974.2" stroke="#e5e7eb"/>
+<text x="131" y="980.2" text-anchor="end" class="tick">300.0</text>
+<line x1="143" y1="890.6" x2="850" y2="890.6" stroke="#e5e7eb"/>
+<text x="131" y="896.6" text-anchor="end" class="tick">400.0</text>
+<line x1="143" y1="807.0" x2="850" y2="807.0" stroke="#e5e7eb"/>
+<text x="131" y="813.0" text-anchor="end" class="tick">500.0</text>
+<line x1="143.0" y1="807" x2="143.0" y2="1225" stroke="#f3f4f6"/>
+<text x="143.0" y="1259" text-anchor="middle" class="tick">168</text>
+<line x1="425.8" y1="807" x2="425.8" y2="1225" stroke="#f3f4f6"/>
+<text x="425.8" y="1259" text-anchor="middle" class="tick">252</text>
+<line x1="850.0" y1="807" x2="850.0" y2="1225" stroke="#f3f4f6"/>
+<text x="850.0" y="1259" text-anchor="middle" class="tick">378</text>
+<line x1="143" y1="1225" x2="850" y2="1225" stroke="#1f2937" stroke-width="2"/>
+<line x1="143" y1="807" x2="143" y2="1225" stroke="#1f2937" stroke-width="2"/>
+<text x="496.5" y="1267" text-anchor="middle" class="axis">VUs</text>
+<text x="79" y="1016.0" text-anchor="middle" transform="rotate(-90 79 1016.0)" class="axis">req/s</text>
+<path d="M 143.0 1144.7 L 425.8 1054.7 L 850.0 1064.6" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="1144.7" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="1054.7" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="1064.6" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 1177.4 L 425.8 1175.5 L 850.0 1157.0" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="1177.4" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="1175.5" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="1157.0" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 1168.4 L 425.8 1143.2 L 850.0 1092.9" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="1168.4" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="1143.2" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="1092.9" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<path d="M 143.0 1176.3 L 425.8 1134.5 L 850.0 1125.5" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143.0" cy="1176.3" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="425.8" cy="1134.5" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="850.0" cy="1125.5" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<text x="958" y="779" class="panel">Taxa de erro média</text>
+<line x1="1028" y1="1225.0" x2="1705" y2="1225.0" stroke="#e5e7eb"/>
+<text x="1016" y="1231.0" text-anchor="end" class="tick">0.00</text>
+<line x1="1028" y1="1141.4" x2="1705" y2="1141.4" stroke="#e5e7eb"/>
+<text x="1016" y="1147.4" text-anchor="end" class="tick">1.00</text>
+<line x1="1028" y1="1057.8" x2="1705" y2="1057.8" stroke="#e5e7eb"/>
+<text x="1016" y="1063.8" text-anchor="end" class="tick">2.00</text>
+<line x1="1028" y1="974.2" x2="1705" y2="974.2" stroke="#e5e7eb"/>
+<text x="1016" y="980.2" text-anchor="end" class="tick">3.00</text>
+<line x1="1028" y1="890.6" x2="1705" y2="890.6" stroke="#e5e7eb"/>
+<text x="1016" y="896.6" text-anchor="end" class="tick">4.00</text>
+<line x1="1028" y1="807.0" x2="1705" y2="807.0" stroke="#e5e7eb"/>
+<text x="1016" y="813.0" text-anchor="end" class="tick">5.00</text>
+<line x1="1028.0" y1="807" x2="1028.0" y2="1225" stroke="#f3f4f6"/>
+<text x="1028.0" y="1259" text-anchor="middle" class="tick">168</text>
+<line x1="1298.8" y1="807" x2="1298.8" y2="1225" stroke="#f3f4f6"/>
+<text x="1298.8" y="1259" text-anchor="middle" class="tick">252</text>
+<line x1="1705.0" y1="807" x2="1705.0" y2="1225" stroke="#f3f4f6"/>
+<text x="1705.0" y="1259" text-anchor="middle" class="tick">378</text>
+<line x1="1028" y1="1225" x2="1705" y2="1225" stroke="#1f2937" stroke-width="2"/>
+<line x1="1028" y1="807" x2="1028" y2="1225" stroke="#1f2937" stroke-width="2"/>
+<text x="1366.5" y="1267" text-anchor="middle" class="axis">VUs</text>
+<text x="964" y="1016.0" text-anchor="middle" transform="rotate(-90 964 1016.0)" class="axis">%</text>
+<path d="M 1028.0 1218.4 L 1298.8 1224.9 L 1705.0 1219.3" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="1218.4" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="1224.9" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="1219.3" r="6" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 1144.2 L 1298.8 1153.8 L 1705.0 931.2" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="1144.2" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="1153.8" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="931.2" r="6" fill="#16a34a" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 1199.6 L 1298.8 1223.5 L 1705.0 1223.4" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="1199.6" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="1223.5" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="1223.4" r="6" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<path d="M 1028.0 1182.2 L 1298.8 1180.1 L 1705.0 1058.9" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1028.0" cy="1182.2" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="1298.8" cy="1180.1" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+<circle cx="1705.0" cy="1058.9" r="6" fill="#9333ea" stroke="#fff" stroke-width="2"/>
+</svg>

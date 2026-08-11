@@ -1,0 +1,29 @@
+{
+  "description": "Selected confirmatory load levels after exploratory runs.",
+  "rampUpDuration": "1m",
+  "warmupDuration": "1m",
+  "measurementDuration": "5m",
+  "recommendedReplications": 30,
+  "levels": [
+    {
+      "level": 4,
+      "vus": 168,
+      "duration": "5m"
+    },
+    {
+      "level": 5,
+      "vus": 252,
+      "duration": "5m"
+    },
+    {
+      "level": 6,
+      "vus": 378,
+      "duration": "5m"
+    }
+  ],
+  "selectionRationale": [
+    "168 VUs represents high load before or near degradation for the local scenarios.",
+    "252 VUs captures the transition region observed in exploratory runs.",
+    "378 VUs represents stress/degradation while still completing the workload."
+  ]
+}

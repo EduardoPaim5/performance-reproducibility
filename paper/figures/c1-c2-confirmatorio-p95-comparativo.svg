@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="880" viewBox="0 0 1500 880">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827}.title{font-size:38px;font-weight:700}.subtitle{font-size:22px;fill:#4b5563}.axis{font-size:22px;fill:#374151}.tick{font-size:19px;fill:#6b7280}.legend{font-size:22px}</style>
+<text x="80" y="62" class="title">C1 vs C2 confirmatório: latência p95 média</text>
+<text x="80" y="96" class="subtitle">Média das 30 repetições por nível de carga</text>
+<line x1="145" y1="735.0" x2="1415" y2="735.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="742.0" text-anchor="end" class="tick">0</text>
+<line x1="145" y1="613.0" x2="1415" y2="613.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="620.0" text-anchor="end" class="tick">5000</text>
+<line x1="145" y1="491.0" x2="1415" y2="491.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="498.0" text-anchor="end" class="tick">10000</text>
+<line x1="145" y1="369.0" x2="1415" y2="369.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="376.0" text-anchor="end" class="tick">15000</text>
+<line x1="145" y1="247.0" x2="1415" y2="247.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="254.0" text-anchor="end" class="tick">20000</text>
+<line x1="145" y1="125.0" x2="1415" y2="125.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="127" y="132.0" text-anchor="end" class="tick">25000</text>
+<line x1="145.0" y1="125" x2="145.0" y2="735" stroke="#f3f4f6" stroke-width="1"/>
+<text x="145.0" y="777" text-anchor="middle" class="tick">168</text>
+<line x1="653.0" y1="125" x2="653.0" y2="735" stroke="#f3f4f6" stroke-width="1"/>
+<text x="653.0" y="777" text-anchor="middle" class="tick">252</text>
+<line x1="1415.0" y1="125" x2="1415.0" y2="735" stroke="#f3f4f6" stroke-width="1"/>
+<text x="1415.0" y="777" text-anchor="middle" class="tick">378</text>
+<line x1="145" y1="735" x2="1415" y2="735" stroke="#1f2937" stroke-width="2"/>
+<line x1="145" y1="125" x2="145" y2="735" stroke="#1f2937" stroke-width="2"/>
+<text x="780.0" y="838" text-anchor="middle" class="axis">Usuários virtuais (VUs)</text>
+<text x="42" y="430.0" text-anchor="middle" transform="rotate(-90 42 430.0)" class="axis">Latência p95 média (ms)</text>
+<path d="M 145.0 638.2 L 653.0 713.0 L 1415.0 597.5" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="145.0" cy="638.2" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<circle cx="653.0" cy="713.0" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1415.0" cy="597.5" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<path d="M 145.0 397.7 L 653.0 287.7 L 1415.0 264.9" fill="none" stroke="#16a34a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="145.0" cy="397.7" r="8" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="653.0" cy="287.7" r="8" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1415.0" cy="264.9" r="8" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+<line x1="1040" y1="50" x2="1070" y2="50" stroke="#2563eb" stroke-width="5"/>
+<text x="1082" y="56" class="legend">C1 - Nativo local</text>
+<line x1="1040" y1="86" x2="1070" y2="86" stroke="#16a34a" stroke-width="5"/>
+<text x="1082" y="92" class="legend">C2 - Docker local</text>
+</svg>
